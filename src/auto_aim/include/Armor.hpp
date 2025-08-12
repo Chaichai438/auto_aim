@@ -13,17 +13,17 @@ namespace xz_rm
     public:
         Color color;
         const Lightbar left_lightbar, right_lightbar;
-        cv::Point2f center;      // 不是对角线交点
-        cv::Point2f center_norm; // 归一化坐标
-        std::vector<cv::Point2f> points;
+        cv::Point2f center;              // 不是对角线交点
+        cv::Point2f center_norm;         // 归一化坐标
+        std::vector<cv::Point2f> points; // 拟合的装甲板四个角点
 
         double ratio;             // 两灯条的中点连线与长灯条的长度之比
         double side_ratio;        // 长灯条与短灯条的长度之比
         double rectangular_error; // 灯条和中点连线所成夹角与π/2的差值
 
-        ArmorType type;
-        ArmorName name;
-        ArmorPriority priority;
+        ArmorType type;         // 装甲板类型
+        ArmorName name;         // 装甲板名称
+        ArmorPriority priority; // 装甲板优先级
         cv::Mat ROI;
         double confidence; // 可信度
         bool duplicated;

@@ -15,7 +15,7 @@ namespace xz_rm
         points.emplace_back(right_lightbar.bottom_median);
 
         auto left2right = right_lightbar.center - left_lightbar.center;
-        auto width = cv::norm(left2right);
+        auto width = cv::norm(left2right); // 长度
 
         auto max_lightbar_length = std::max(left_lightbar.length, right_lightbar.length);
         auto min_lightbar_length = std::min(left_lightbar.length, right_lightbar.length);

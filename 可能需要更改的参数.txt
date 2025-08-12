@@ -1,0 +1,1 @@
+图像中心点坐标(相机传入图像分辨率) center_point       位置src/auto_aim/include/TargetBumper.hpp
